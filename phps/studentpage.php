@@ -2,18 +2,37 @@
 <html>
 <head>
 <title>Basic MySQLi Commands</title>
+<style>
+body{
+    background-color: #000000;
+	text-decoration-color: white	;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+tr:hover {background-color:#525252;}
+
+</style>
 </head>
 <body>
 	<br>
 	<div>
 		<table border="1">
 			<thead>
-				<th>firstclass</th>
-				<th>secondclass</th>
-				<th>thirdclass</th>
-				<th>fourthclass</th>
-				<th>fifthclass</th>	
-				<th>sixthclass</th>
+				<th style="color:#D6EEEE">firstclass</th>
+				<th style="color:#D6EEEE">secondclass</th>
+				<th style="color:#D6EEEE">thirdclass</th>
+				<th style="color:#D6EEEE">fourthclass</th>
+				<th style="color:#D6EEEE">fifthclass</th>	
+				<th style="color:#D6EEEE">sixthclass</th>
 				<th></th>
 			</thead>
 			<tbody>
@@ -23,12 +42,12 @@
 					while($row=mysqli_fetch_array($query)){
 						?>
 						<tr>
-							<td><?php echo $row['firstclass']; ?></td>
-							<td><?php echo $row['secondclass']; ?></td>
-							<td><?php echo $row['thirdclass']; ?></td>
-							<td><?php echo $row['fourthclass']; ?></td>
-							<td><?php echo $row['fifthclass']; ?></td>
-							<td><?php echo $row['sixthclass']; ?></td>
+							<td style="color:#D6EEEE"><?php echo $row['firstclass']; ?></td>
+							<td style="color:#D6EEEE"><?php echo $row['secondclass']; ?></td>
+							<td style="color:#D6EEEE"><?php echo $row['thirdclass']; ?></td>
+							<td style="color:#D6EEEE"><?php echo $row['fourthclass']; ?></td>
+							<td style="color:#D6EEEE"><?php echo $row['fifthclass']; ?></td>
+							<td style="color:#D6EEEE"><?php echo $row['sixthclass']; ?></td>
 						</tr>
 						<?php
 					}
