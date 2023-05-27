@@ -5,8 +5,10 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
   var password = document.getElementById("password").value;
   
   if (username === "admin" && password === "password") {
-    window.location.href = "Main/index.html";
-  } else {
+    window.location.href = "http://localhost:3000/phps/index.php";
+  }else if(username === "student" && password === "password"){
+    window.location.href = "http://localhost:3000/phps/studentpage.php";
+  }else{
     alert("Invalid username or password. Please try again.");
   }
   });
